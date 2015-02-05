@@ -17,3 +17,7 @@ void ExampleSubsystem::InitDefaultCommand()
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
 
+void ExampleSubsystem::SetSolenoid(bool direction)
+{
+	m_shifter->Set(direction ? DoubleSolenoid::kForward : DoubleSolenoid::kReverse);
+}

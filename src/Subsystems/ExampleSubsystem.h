@@ -10,9 +10,11 @@ private:
 	// It's desirable that everything possible under private except
 	// for methods that implement subsystem capabilities
 	DoubleSolenoid *m_shifter;
+
 public:
 	ExampleSubsystem();
 	void InitDefaultCommand();
+	void SetSolenoid(bool direction);
 };
 
 #endif

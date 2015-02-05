@@ -6,6 +6,9 @@
 
 class ExampleCommand: public CommandBase
 {
+private:
+	bool toggle;
+
 public:
 	ExampleCommand();
 	void Initialize();
